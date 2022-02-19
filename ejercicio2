@@ -1,0 +1,32 @@
+package sv.edu.udb.guia3;
+
+import java.util.Scanner;
+
+public class Ejercicio2 {
+	public static void main(String[] args) {
+		
+	double valor;
+	double Ludo =(0.37) ;
+	double Kirian = (0.292 );
+	double Jordan = (0.338 );
+	double ludovico ;
+	double kiri ;
+	double jor ;
+	
+	Scanner scanner = new Scanner(System.in) ;
+	System.out.println("********************************");
+	System.out.println("DIVIDAMOS LA EMPRESA EN BASE A PARTICIPACION");
+	System.out.println("********************************");
+	System.out.print("Ingrese el valor de la empresa  : ");
+	valor  = scanner.nextDouble()	;
+	
+	ludovico = valor* Ludo;
+	kiri = valor*Kirian;
+	jor=valor*Jordan;
+	
+	System.out.println("Al licenciado Ludovico P le corresponden : "+ludovico);
+	System.out.println("Al Ingeniero Kirian L le corresponden : "+ kiri);
+	System.out.println("Al Doctor Jordan Belfort le corresponden : "+ jor);
+	
+  }
+}
