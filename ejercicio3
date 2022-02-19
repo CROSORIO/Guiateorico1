@@ -1,0 +1,43 @@
+package sv.edu.udb.guia3;
+
+import java.util.Scanner;
+
+public class Ejercicio3 {
+
+	public static void main(String[] args) {
+		
+	int q1;
+	int q2 ;
+	int radio;
+	int cons = (int)( 9 * Math.pow(10,9) );
+	int resultado;
+	 
+	 Scanner reader = new Scanner(System.in); {
+	System.out.println("********************************");
+	System.out.println("Midamos la magnitud de dos cargas: ");
+	System.out.println("********************************");
+	
+	System.out.println("Ingrese el valor de la carga 1: ");
+	q1  = Integer.parseInt(reader.nextLine());
+	if(q1<0) {
+		System.out.println("sintax error");
+			} else {
+	System.out.println("Ingrese el valor de la carga 2: ");
+	q2  = Integer.parseInt(reader.nextLine());
+	if(q2<0) {
+		System.out.println("sintax error");
+	}else {
+	
+	System.out.println("Ingrese el valor la distancia que las separa en metros : ");
+	radio = Integer.parseInt(reader.nextLine());
+	
+	resultado = ((cons)*((q1*q2)/radio));
+	
+	System.out.print("la fuerza es de: "+resultado);
+	System.out.println("N ");
+	
+				}
+			}
+	 	}
+	}
+}
